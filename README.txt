@@ -4,7 +4,7 @@ Donate link: http://www.benhuson.co.uk/wordpress-plugins/content-parts/
 Tags: content, layout, the_content
 Requires at least: 3.0
 Tested up to: 3.0.4
-Stable tag: 1.0
+Stable tag: 1.1
 
 Divide your post content into sections and show them in different places of your theme templates.
 
@@ -27,6 +27,10 @@ If you are not performing an automatic upgrade, deactivate and reactivate the pl
 For full details how to implement this plugin visit the [Content Parts plugin page](http://www.benhuson.co.uk/wordpress-plugins/content-parts/).
 
 == Changelog ==
+
+= Content Parts 1.1 =
+
+* Added count_content_parts() function. props Rory.
 
 = Content Parts 1.0 =
 
