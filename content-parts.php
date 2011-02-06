@@ -162,4 +162,20 @@ function has_content_parts() {
 
 
 
+/**
+* @method Count Content Parts
+* @description Returns count of available content parts.
+* @returns (Int)
+*/
+
+function count_content_parts() {
+	
+	global $content_parts;
+	
+	return count( $content_parts );
+	
+}
+
+
+
 ?>
