@@ -31,9 +31,6 @@ function content_parts_query_vars( ) {
 	
 	global $num_content_parts, $content_parts, $post;
 	
-	if ( !isset( $post ) )
-		return;
-	
 	$content = $post->post_content;
 	if ( strpos( $content, '<!--contentpartdivider-->' ) ) {
 		$content = str_replace("\n<!--contentpartdivider-->\n", '<!--contentpartdivider-->', $content);
