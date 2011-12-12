@@ -112,6 +112,11 @@ function the_content_parts( $args = null ) {
 	
 	$pargs = wp_parse_args( $args, $defaults );
 	
+	$pargs['start'] = absint( $pargs['start'] );
+	if ( $pargs['start'] <= 0 )
+		$pargs['start'] = 1;
+	$pargs['limit'] = absint( $pargs['limit'] );
+	
 	$count = 1;
 	foreach ( $content_parts as $page ) {
 		if ( $count >= $pargs['start'] && ( $pargs['limit'] == 0 || $count < $pargs['start'] + $pargs['limit']  ) ) {
